@@ -1,0 +1,48 @@
+---
+Name: app
+---
+
+# Configure App Themes:
+
+SilverStripe\View\SSViewer:
+  themes:
+    - silverware-theme
+    - '$default'
+
+# Configure App Locale:
+
+SilverStripe\i18n\i18n:
+  default_locale: '{locale}'
+
+# Configure App Fixtures:
+
+SilverWare\Core\App:
+  fixtures:
+    - app/fixtures/templates.yml
+    - app/fixtures/layouts.yml
+    - app/fixtures/panels.yml
+    - app/fixtures/types.yml
+
+---
+Name: app-dev
+Only:
+  environment: dev
+---
+
+# Configure App Fixtures (dev):
+
+SilverWare\Core\App:
+  load_fixtures: true
+  load_fixtures_once: false
+
+---
+Name: app-test
+Only:
+  environment: test
+---
+
+# Configure App Fixtures (test):
+
+SilverWare\Core\App:
+  load_fixtures: true
+  load_fixtures_once: true

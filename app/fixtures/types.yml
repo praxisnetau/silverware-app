@@ -1,0 +1,9 @@
+# App Page Types:
+
+SilverWare\Model\PageType:
+  Page:
+    MyTemplate: =>SilverWare\Model\Template.Main
+    MyLayout: =>SilverWare\Model\Layout.Main
+  SilverWare\App\Pages\HomePage:
+    MyTemplate: =>SilverWare\Model\Template.Main
+    MyLayout: =>SilverWare\Model\Layout.Home

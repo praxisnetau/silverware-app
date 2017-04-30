@@ -1,0 +1,56 @@
+# App Templates:
+
+SilverWare\Model\Template:
+  Main:
+    +SilverWare\Sections\HeaderSection.Header:
+      StyleID: Header
+      +Row:
+        +Column:
+          +SilverWare\Navigation\Components\BarNavigation.NavBar:
+            BrandText: 'SilverWare'
+            Items:
+              SilverWare\Navigation\Items\NavigationItem.MainNavigation:
+                ShowSubMenus: true
+    +SilverWare\Sections\LayoutSection.Layout:
+      StyleID: Layout
+    +SilverWare\Grid\Section.Widgets:
+      StyleID: Widgets
+      +Row:
+        +Left:
+          +SilverWare\Components\ContentComponent.WidgetContent:
+            StyleID: WidgetContent
+            Content: >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis in tortor accumsan
+                rutrum sed eget nunc. Vestibulum facilisis mi vel metus mollis congue sed vel nibh. Phasellus dapibus
+                vitae nisi sit amet porta. Etiam molestie fermentum massa, eget tristique elit.
+              </p>
+        +Center:
+          +SilverWare\Components\ContentComponent.WidgetContent:
+            StyleID: WidgetContent
+            Content: >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis in tortor accumsan
+                rutrum sed eget nunc. Vestibulum facilisis mi vel metus mollis congue sed vel nibh. Phasellus dapibus
+                vitae nisi sit amet porta. Etiam molestie fermentum massa, eget tristique elit.
+              </p>
+        +Right:
+          +SilverWare\Components\ContentComponent.WidgetContent:
+            StyleID: WidgetContent
+            Content: >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet felis in tortor accumsan
+                rutrum sed eget nunc. Vestibulum facilisis mi vel metus mollis congue sed vel nibh. Phasellus dapibus
+                vitae nisi sit amet porta. Etiam molestie fermentum massa, eget tristique elit.
+              </p>
+    +SilverWare\Sections\FooterSection.Footer:
+      StyleID: Footer
+      +Row:
+        +Left:
+          +SilverWare\Components\CopyrightComponent.Copyright:
+            EntityName: 'My Company'
+        +Right:
+          +SilverWare\Components\DeveloperComponent.Developer:
+            DeveloperName: 'My Developer'
+          +SilverWare\Components\ScrollToTopButton.ScrollToTop:
+            ButtonIcon: 'chevron-up'

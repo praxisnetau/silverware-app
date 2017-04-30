@@ -1,0 +1,26 @@
+# App Layouts:
+
+SilverWare\Model\Layout:
+  Main:
+    +Section:
+      +Row:
+        +Left:
+          +SilverWare\Navigation\Components\CrumbNavigation.Crumbs:
+            StyleID: Crumbs
+            HideTopLevel: false
+          +SilverWare\Components\PageComponent.PageLayout:
+          StyleID: PageLayout
+          Span:
+            Medium: 9
+        +Right:
+          +SilverWare\Components\AreaComponent.Sidebar:
+          StyleID: Sidebar
+          Sidebar: true
+          Span:
+            Medium: 3
+  Home:
+    +Section:
+      +Row:
+        +Column:
+          +SilverWare\Components\PageComponent.PageLayout:
+          StyleID: HomePageLayout

@@ -1,0 +1,14 @@
+# App Panels:
+
+SilverWare\Model\Panel:
+  Sidebar:
+    Areas:
+      - =>SilverWare\Components\AreaComponent.Sidebar
+    +SilverWare\Navigation\Components\LevelNavigation.SideNav:
+      StyleID: SideNav
+      UseLevelTitle: true
+      FontIcon: arrow-right
+    +SilverWare\Components\ContentComponent.SideContent:
+      StyleID: SideContent
+      Content: >
+        <p>This is a content component in the sidebar panel.</p>

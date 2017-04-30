@@ -1,0 +1,23 @@
+# ======================================================================================================================
+# Application Deployment Config
+# ======================================================================================================================
+
+# Staging Server:
+
+staging:
+  host: {host-staging}
+  user: {user-staging}
+  identity_file: ~
+  stage: staging
+  branch: {branch-staging}
+  deploy_path: {path-staging}
+
+# Production Server:
+
+production:
+  host: {host-production}
+  user: {user-production}
+  identity_file: ~
+  stage: production
+  branch: {branch-production}
+  deploy_path: {path-production}
