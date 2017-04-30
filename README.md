@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/silverware-logo.svg" width="400" height="400" title="SilverWare" alt="SilverWare">
+  <img src="media/silverware-logo.png" width="400" height="400" title="SilverWare" alt="SilverWare">
 </p>
 
 # SilverWare Application
