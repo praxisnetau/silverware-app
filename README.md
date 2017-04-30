@@ -71,6 +71,8 @@ Please see [contributing](CONTRIBUTING.md) for more information.
 
 ## Attribution
 
+- Logo icon designed by [Freepik](http://www.freepik.com) from [www.flaticon.com](http://www.flaticon.com)
+  and released under a [Creative Commons BY 3.0](https://creativecommons.org/licenses/by/3.0) license.
 - includes configuration for [Deployer][deployer], a most excellent PHP application deployment tool by
   [@antonmedv](https://github.com/antonmedv)
 
