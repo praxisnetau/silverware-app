@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="media/silverware-logo.png" width="400" height="400" title="SilverWare" alt="SilverWare">
+  <img src="media/bitmap/silverware-logo.png" width="200" height="200" title="SilverWare" alt="SilverWare">
 </p>
 
 # SilverWare Application
+
+[![Latest Stable Version](https://poser.pugx.org/silverware/app/v/stable)](https://packagist.org/packages/silverware/app)
+[![Latest Unstable Version](https://poser.pugx.org/silverware/app/v/unstable)](https://packagist.org/packages/silverware/app)
+[![License](https://poser.pugx.org/silverware/app/license)](https://packagist.org/packages/silverware/app)
 
 SilverWare is a component framework built upon SilverStripe. This repository sets up a new
 application environment, downloading everything needed to get underway. Files are also included for
