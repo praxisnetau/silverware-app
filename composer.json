@@ -35,7 +35,7 @@
     "silverware/font-icons": "^0.1@dev",
     "silverware/navigation": "^0.1@dev",
     "silverware/open-graph": "^0.1@dev",
-    "silverware/silverware": "^0.2@dev",
+    "silverware/silverware": "^0.3@dev",
     "silverware/spam-guard": "^0.1@dev",
     "silverware/theme": "^0.1@dev",
     "silverware/validator": "^0.1@dev"
