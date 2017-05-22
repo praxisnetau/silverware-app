@@ -30,15 +30,15 @@
     "silverstripe/reports": "4.0.x-dev",
     "silverstripe/siteconfig": "4.0.x-dev",
     "silverstripe/versioned": "1.0.x-dev",
-    "silverware/colorpicker": "^0.1@dev",
-    "silverware/datepicker": "^0.1@dev",
-    "silverware/font-icons": "^0.1@dev",
-    "silverware/navigation": "^0.1@dev",
-    "silverware/open-graph": "^0.1@dev",
-    "silverware/silverware": "^0.3@dev",
-    "silverware/spam-guard": "^0.1@dev",
-    "silverware/theme": "^0.1@dev",
-    "silverware/validator": "^0.1@dev"
+    "silverware/colorpicker": "~0.1@dev",
+    "silverware/datepicker": "~0.1@dev",
+    "silverware/font-icons": "~0.1@dev",
+    "silverware/navigation": "~0.1@dev",
+    "silverware/open-graph": "~0.1@dev",
+    "silverware/silverware": "~0.3@dev",
+    "silverware/spam-guard": "~0.1@dev",
+    "silverware/theme": "~0.1@dev",
+    "silverware/validator": "~0.1@dev"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7"
