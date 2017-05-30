@@ -33,6 +33,7 @@
     "silverware/colorpicker": "~0.1@dev",
     "silverware/datepicker": "~0.1@dev",
     "silverware/font-icons": "~0.1@dev",
+    "silverware/model-filters": "~0.1@dev",
     "silverware/navigation": "~0.1@dev",
     "silverware/open-graph": "~0.1@dev",
     "silverware/silverware": "~0.3@dev",
