@@ -6,13 +6,6 @@
 /.travis.yml export-ignore
 /.scrutinizer.yml export-ignore
 
-# Git files
-/.gitattributes export-ignore
-/.gitignore export-ignore
-
-# Editor files
-/.editorconfig export-ignore
-
 # Markdown files
 /CONTRIBUTING.md export-ignore
 /LICENSE.md export-ignore
