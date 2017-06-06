@@ -31,6 +31,7 @@
     "silverstripe/siteconfig": "4.0.x-dev",
     "silverstripe/versioned": "1.0.x-dev",
     "silverware/colorpicker": "~0.1@dev",
+    "silverware/countries": "~0.1@dev",
     "silverware/datepicker": "~0.1@dev",
     "silverware/font-icons": "~0.1@dev",
     "silverware/model-filters": "~0.1@dev",
