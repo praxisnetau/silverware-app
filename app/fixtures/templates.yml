@@ -8,9 +8,8 @@ SilverWare\Model\Template:
         +Column:
           +SilverWare\Navigation\Components\BarNavigation.NavBar:
             BrandText: 'SilverWare'
-            Items:
-              SilverWare\Navigation\Items\NavigationItem.MainNavigation:
-                ShowSubMenus: true
+            +SilverWare\Navigation\Items\NavigationItem.MainNavigation:
+              ShowSubMenus: true
     +SilverWare\Sections\LayoutSection.Layout:
       StyleID: Layout
     +SilverWare\Grid\Section.Widgets:

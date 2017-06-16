@@ -30,17 +30,18 @@
     "silverstripe/reports": "4.0.x-dev",
     "silverstripe/siteconfig": "4.0.x-dev",
     "silverstripe/versioned": "1.0.x-dev",
-    "silverware/colorpicker": "~0.1@dev",
-    "silverware/countries": "~0.1@dev",
-    "silverware/datepicker": "~0.1@dev",
-    "silverware/font-icons": "~0.1@dev",
-    "silverware/model-filters": "~0.1@dev",
-    "silverware/navigation": "~0.1@dev",
-    "silverware/open-graph": "~0.1@dev",
-    "silverware/silverware": "~0.3@dev",
-    "silverware/spam-guard": "~0.1@dev",
-    "silverware/theme": "~0.1@dev",
-    "silverware/validator": "~0.1@dev"
+    "silverware/admin": "^1.0",
+    "silverware/colorpicker": "^1.0",
+    "silverware/countries": "^1.0",
+    "silverware/datepicker": "^1.0",
+    "silverware/font-icons": "^1.0",
+    "silverware/model-filters": "^1.0",
+    "silverware/navigation": "^1.0",
+    "silverware/open-graph": "^1.0",
+    "silverware/silverware": "^1.0",
+    "silverware/spam-guard": "^1.0",
+    "silverware/theme": "^1.0",
+    "silverware/validator": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7"
@@ -63,7 +64,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.1.x-dev"
+      "dev-master": "1.0.x-dev"
     }
   },
   "minimum-stability": "dev",

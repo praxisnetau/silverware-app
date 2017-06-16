@@ -15,7 +15,6 @@
  * @link https://github.com/praxisnetau/silverware-app
  */
 
-use SilverWare\Admin\PageIconFix;
 use SilverStripe\CMS\Model\SiteTree;
 
 /**
@@ -32,8 +31,6 @@ use SilverStripe\CMS\Model\SiteTree;
  */
 class Page extends SiteTree
 {
-    use PageIconFix;
-    
     /**
      * Human-readable singular name.
      *

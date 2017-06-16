@@ -12,3 +12,29 @@ SilverStripe\CMS\Model\RedirectorPage:
 
 SilverStripe\CMS\Model\VirtualPage:
   icon: app/admin/client/dist/images/icons/VirtualPage.png
+
+# Configure Admin Style:
+
+SilverStripe\Admin\LeftAndMain:
+  admin_style:
+    ColorBackgroundLogo: '#005b94'
+    ColorForegroundLogo: 'rgba(255, 255, 255, 0.8)'
+    ColorLinkLogo: '#fff'
+    ColorLinkLogoIcon: 'rgba(255, 255, 255, 0.8)'
+    ColorBorderBottomLogo: '#106ba4'
+    ColorBackgroundMenu: '#20282c'
+    ColorBackgroundMenuItem: '#20282c'
+    ColorForegroundMenuItem: '#bfc0c0'
+    ColorBackgroundHoverMenuItem: 'rgba(255, 255, 255, 0.1)'
+    ColorForegroundHoverMenuItem: '#fff'
+    ColorBackgroundCurrentMenuItem: '#139fda'
+    ColorForegroundCurrentMenuItem: '#fff'
+    ColorBorderRightMenuHide: true
+    ColorMenuItemIcon: '#bfc0c0'
+    ColorMenuItemAfterText: '#fff'
+    ColorHoverMenuItemIcon: '#fff'
+    ColorCurrentMenuItemIcon: '#fff'
+    ColorBackgroundToggle: '#20282c'
+    ColorBorderTopToggle: '#20282c'
+    ColorToggleStatus: '#fff'
+    ColorToggleCollapse: '#fff'
