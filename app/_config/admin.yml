@@ -2,28 +2,13 @@
 Name: app-admin
 ---
 
-# Configure Admin Extensions:
+# Configure Admin Requirements and Style:
 
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
     - app/admin/client/dist/styles/bundle.css
   extra_requirements_javascript:
     - app/admin/client/dist/js/bundle.js
-
-# Configure Page Icons:
-
-SilverStripe\CMS\Model\ErrorPage:
-  icon: app/admin/client/dist/images/icons/ErrorPage.png
-
-SilverStripe\CMS\Model\RedirectorPage:
-  icon: app/admin/client/dist/images/icons/RedirectorPage.png
-
-SilverStripe\CMS\Model\VirtualPage:
-  icon: app/admin/client/dist/images/icons/VirtualPage.png
-
-# Configure Admin Style:
-
-SilverStripe\Admin\LeftAndMain:
   admin_style:
     ColorBackgroundMenuHeader: '#005b94'
     ColorForegroundSiteName: '#fff'
@@ -47,3 +32,14 @@ SilverStripe\Admin\LeftAndMain:
     ColorBorderTopToggle: '#20282c'
     ColorToggleStatus: '#fff'
     ColorToggleCollapse: '#fff'
+
+# Configure Page Icons:
+
+SilverStripe\CMS\Model\ErrorPage:
+  icon: app/admin/client/dist/images/icons/ErrorPage.png
+
+SilverStripe\CMS\Model\RedirectorPage:
+  icon: app/admin/client/dist/images/icons/RedirectorPage.png
+
+SilverStripe\CMS\Model\VirtualPage:
+  icon: app/admin/client/dist/images/icons/VirtualPage.png
