@@ -9,6 +9,7 @@ const webpack = require('webpack');
 // Load Plugin Modules:
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Configure Paths:
@@ -23,6 +24,15 @@ const PATHS = {
   MODULES: path.resolve(__dirname, 'node_modules')
 };
 
+// Configure Style Loader:
+
+const style = (env, loaders) => {
+  return (env === 'production') ? ExtractTextPlugin.extract({
+    fallback: 'style-loader',
+    use: loaders
+  }) : [{ loader: 'style-loader' }].concat(loaders);
+};
+
 // Configure Rules:
 
 const rules = (env) => {
@@ -35,6 +45,48 @@ const rules = (env) => {
         }
       ],
       exclude: [ PATHS.MODULES ]
+    },
+    {
+      test: /\.css$/,
+      use: style(env, [
+        {
+          loader: 'css-loader'
+        },
+        {
+          loader: 'postcss-loader'
+        }
+      ])
+    },
+    {
+      test: /\.scss$/,
+      use: style(env, [
+        {
+          loader: 'css-loader'
+        },
+        {
+          loader: 'postcss-loader'
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            includePaths: [
+              path.resolve(process.env.PWD, '../') // allows resolving of framework paths in symlinked modules
+            ]
+          }
+        }
+      ])
+    },
+    {
+      test: /\.(gif|jpg|png)$/,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            name: 'images/[name].[ext]',
+            limit: 10000
+          }
+        }
+      ]
     }
   ];
 };
@@ -73,6 +125,10 @@ const plugins = (env, src, dist) => {
   return common.concat((env === 'production') ? [
     new CleanWebpackPlugin([ dist ], {
       verbose: true
+    }),
+    new ExtractTextPlugin({
+      filename: 'styles/[name].css',
+      allChunks: true
     }),
     new webpack.optimize.UglifyJsPlugin({
       output: {

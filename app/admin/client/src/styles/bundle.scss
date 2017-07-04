@@ -1,6 +1,10 @@
 /* SilverWare App Admin Bundle
 ===================================================================================================================== */
 
-// Load Styles:
+// Import Local Variables:
 
-require('styles/bundle.scss');
+@import "variables";
+
+// Import Admin Styles:
+
+@import "admin";
