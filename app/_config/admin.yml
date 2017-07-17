@@ -35,11 +35,11 @@ SilverStripe\Admin\LeftAndMain:
 
 # Configure Page Icons:
 
-SilverStripe\CMS\Model\ErrorPage:
-  icon: app/admin/client/dist/images/icons/ErrorPage.png
-
 SilverStripe\CMS\Model\RedirectorPage:
   icon: app/admin/client/dist/images/icons/RedirectorPage.png
 
 SilverStripe\CMS\Model\VirtualPage:
   icon: app/admin/client/dist/images/icons/VirtualPage.png
+
+SilverStripe\ErrorPage\ErrorPage:
+  icon: app/admin/client/dist/images/icons/ErrorPage.png
