@@ -52,7 +52,7 @@
       "GDM\\SSAutoGitIgnore\\UpdateScript::Go"
     ],
     "post-create-project-cmd": [
-      "SilverWare\\App\\Dev\\Installer::handleEvent"
+      "SilverWare\\Dev\\Installer::handleEvent"
     ]
   },
   "autoload": {

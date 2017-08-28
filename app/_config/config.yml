@@ -2,6 +2,11 @@
 Name: app
 ---
 
+# Configure App Project:
+
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
 # Configure App Themes:
 
 SilverStripe\View\SSViewer:
@@ -14,9 +19,19 @@ SilverStripe\View\SSViewer:
 SilverStripe\i18n\i18n:
   default_locale: '{locale}'
 
+# Configure Content Controller:
+
+SilverStripe\CMS\Controllers\ContentController:
+  required_js:
+    - app/client/dist/js/bundle.js
+  required_css:
+    - app/client/dist/styles/bundle.css
+
 # Configure App Fixtures:
 
 SilverWare\Core\App:
+  title: '{app-title}'
+  tagline: '{app-tagline}'
   fixtures:
     - app/fixtures/templates.yml
     - app/fixtures/layouts.yml

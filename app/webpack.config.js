@@ -21,6 +21,12 @@ const PATHS = {
     BUNDLES: path.resolve(__dirname, 'admin/client/src/bundles'),
     PUBLIC: '/app/admin/client/dist/'
   },
+  MODULE: {
+    SRC: path.resolve(__dirname, 'client/src'),
+    DIST: path.resolve(__dirname, 'client/dist'),
+    BUNDLES: path.resolve(__dirname, 'client/src/bundles'),
+    PUBLIC: '/app/client/dist/',
+  },
   MODULES: path.resolve(__dirname, 'node_modules')
 };
 
@@ -172,8 +178,34 @@ const config = (env) => {
         ]
       },
       externals: {
-        jquery: 'jQuery',
-        jQuery: 'jQuery'
+        jquery: 'jQuery'
+      }
+    },
+    {
+      entry: {
+        'bundle': path.resolve(PATHS.MODULE.BUNDLES, 'bundle.js')
+      },
+      output: {
+        path: PATHS.MODULE.DIST,
+        filename: 'js/[name].js',
+        publicPath: PATHS.MODULE.PUBLIC
+      },
+      module: {
+        rules: rules(env)
+      },
+      devtool: devtool(env),
+      plugins: plugins(env, PATHS.MODULE.SRC, PATHS.MODULE.DIST),
+      resolve: {
+        alias: {
+          /* 'name-of-theme': path.resolve(process.env.PWD, '../themes/name-of-theme/source') */
+        },
+        modules: [
+          PATHS.MODULE.SRC,
+          PATHS.MODULES
+        ]
+      },
+      externals: {
+        jquery: 'jQuery'
       }
     }
   ];

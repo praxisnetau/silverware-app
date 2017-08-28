@@ -15,22 +15,6 @@
  * @link https://github.com/praxisnetau/silverware-app
  */
 
-// Define Globals:
-
-global $project, $database;
-
-// Define Project Name:
-
-$project = 'app';
-
-// Define Database Name:
-
-$database = '{database}';
-
-// Configure Environment:
-
-require_once 'conf/ConfigureFromEnv.php';
-
 // Define Application Constants:
 
 if (!defined('APP_DIR')) {
