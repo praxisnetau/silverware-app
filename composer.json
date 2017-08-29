@@ -31,7 +31,7 @@
     "silverstripe/reports": "4.0.x-dev",
     "silverstripe/siteconfig": "4.0.x-dev",
     "silverstripe/versioned": "1.0.x-dev",
-    "silverware/admin": "^1.0",
+    "silverware/admin": "^1.1",
     "silverware/colorpicker": "^1.0",
     "silverware/countries": "^1.0",
     "silverware/datepicker": "^1.0",
@@ -39,9 +39,9 @@
     "silverware/model-filters": "^1.0",
     "silverware/navigation": "^1.0",
     "silverware/open-graph": "^1.0",
-    "silverware/silverware": "^1.0",
+    "silverware/silverware": "^1.1",
     "silverware/spam-guard": "^1.0",
-    "silverware/theme": "^1.0",
+    "silverware/theme": "^1.2",
     "silverware/validator": "^1.0"
   },
   "require-dev": {
