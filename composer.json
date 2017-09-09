@@ -39,7 +39,7 @@
     "silverware/model-filters": "^1.0",
     "silverware/navigation": "^1.1",
     "silverware/open-graph": "^1.0",
-    "silverware/silverware": "^1.1",
+    "silverware/silverware": "^1.2",
     "silverware/spam-guard": "^1.0",
     "silverware/theme": "^1.2",
     "silverware/validator": "^1.1"

@@ -9,6 +9,7 @@ SilverStripe\Admin\LeftAndMain:
     - app/admin/client/dist/styles/bundle.css
   extra_requirements_javascript:
     - app/admin/client/dist/js/bundle.js
+  hide_disabled_page_types: true
   admin_style:
     ColorBackgroundMenuHeader: '#005b94'
     ColorForegroundSiteName: '#fff'
