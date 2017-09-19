@@ -12,18 +12,18 @@ require 'recipe/common.php';
 
 // Load Server Configuration:
 
-serverList('deploy.yml');
+inventory('deploy.yml');
 
 // Define Custom Binaries:
 
 set('bin/composer', function () {
-    return run('which composer')->toString();
+    return run('which composer');
 });
 
 // Define SSH Settings:
 
 set('ssh_type', 'native');
-set('ssh_multiplexing', true);
+set('ssh_multiplexing', false);
 
 // Define Default Stage:
 

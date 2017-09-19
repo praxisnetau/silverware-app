@@ -5,19 +5,23 @@
 # Staging Server:
 
 staging:
-  host: {host-staging}
+  hostname: {host-staging}
   user: {user-staging}
-  identity_file: ~
   stage: staging
   branch: {branch-staging}
   deploy_path: {path-staging}
+  env:
+    SS_DATABASE_PREFIX: test_
+    SS_DATABASE_NAME: {database}
 
 # Production Server:
 
 production:
-  host: {host-production}
+  hostname: {host-production}
   user: {user-production}
-  identity_file: ~
   stage: production
   branch: {branch-production}
   deploy_path: {path-production}
+  env:
+    SS_DATABASE_PREFIX: live_
+    SS_DATABASE_NAME: {database}
