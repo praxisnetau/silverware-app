@@ -11,6 +11,7 @@ staging:
   branch: {branch-staging}
   deploy_path: {path-staging}
   env:
+    SS_ENVIRONMENT_TYPE: test
     SS_DATABASE_PREFIX: test_
     SS_DATABASE_NAME: {database}
 
@@ -23,5 +24,6 @@ production:
   branch: {branch-production}
   deploy_path: {path-production}
   env:
+    SS_ENVIRONMENT_TYPE: live
     SS_DATABASE_PREFIX: live_
     SS_DATABASE_NAME: {database}
