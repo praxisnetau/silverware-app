@@ -1,0 +1,10 @@
+---
+Name: app-theme
+---
+
+# Configure App Themes:
+
+SilverStripe\View\SSViewer:
+  themes:
+    - silverware-theme
+    - '$default'

@@ -7,13 +7,6 @@ Name: app
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
 
-# Configure App Themes:
-
-SilverStripe\View\SSViewer:
-  themes:
-    - silverware-theme
-    - '$default'
-
 # Configure App Locale:
 
 SilverStripe\i18n\i18n:
