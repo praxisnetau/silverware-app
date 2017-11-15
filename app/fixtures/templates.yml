@@ -4,7 +4,9 @@ SilverWare\Model\Template:
   Main:
     +SilverWare\Sections\HeaderSection.Header:
       StyleID: Header
+      EdgeToEdge: true
       +Row:
+        NoGutters: true
         +Column:
           +SilverWare\Navigation\Components\BarNavigation.NavBar:
             BrandText: 'SilverWare'
