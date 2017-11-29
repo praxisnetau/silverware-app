@@ -5,22 +5,23 @@ SilverWare\Model\Layout:
     +Section:
       +Row:
         +Left:
+          StyleID: PageLayout
+          Span:
+            Medium: fill
           +SilverWare\Navigation\Components\CrumbNavigation.Crumbs:
             StyleID: Crumbs
             HideTopLevel: false
           +SilverWare\Components\PageComponent.PageLayout:
-          StyleID: PageLayout
-          Span:
-            Medium: 9
         +Right:
-          +SilverWare\Components\AreaComponent.Sidebar:
           StyleID: Sidebar
           Sidebar: true
+          HideEmpty: true
           Span:
             Medium: 3
+          +SilverWare\Components\AreaComponent.Sidebar:
   Home:
     +Section:
       +Row:
         +Column:
-          +SilverWare\Components\PageComponent.PageLayout:
           StyleID: HomePageLayout
+          +SilverWare\Components\PageComponent.PageLayout:

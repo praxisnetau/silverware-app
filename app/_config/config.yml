@@ -26,6 +26,7 @@ SilverWare\Core\App:
   title: '{app-title}'
   tagline: '{app-tagline}'
   fixtures:
+    - app/fixtures/pages.yml
     - app/fixtures/templates.yml
     - app/fixtures/layouts.yml
     - app/fixtures/panels.yml
