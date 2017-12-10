@@ -67,6 +67,14 @@ class HomePage extends Page
     private static $icon = 'app/admin/client/dist/images/icons/HomePage.png';
     
     /**
+     * Defines the table name to use for this object.
+     *
+     * @var string
+     * @config
+     */
+    private static $table_name = 'App_HomePage';
+    
+    /**
      * Answers the home page for the site.
      *
      * @return HomePage
