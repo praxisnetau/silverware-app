@@ -62,4 +62,12 @@ class Page extends SiteTree
      * @config
      */
     private static $icon = 'app/admin/client/dist/images/icons/Page.png';
+    
+    /**
+     * Defines the table name to use for this object.
+     *
+     * @var string
+     * @config
+     */
+    private static $table_name = 'Page';
 }
