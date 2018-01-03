@@ -1,16 +1,27 @@
 <?php
 
-// =====================================================================================================================
-// Application Deployment Script
-// =====================================================================================================================
+/**
+ * {app-title} deployment script.
+ *
+ * PHP version >=5.6.0
+ *
+ * For full copyright and license information, please view the
+ * LICENSE.md file that was distributed with this source code.
+ *
+ * @package {app-namespace}
+ * @author {author-name} <{author-email}>
+ * @copyright {year} {author-company}
+ * @license {license-link} {license-name}
+ * @link {project-link}
+ */
 
 namespace Deployer;
 
-// Load Common Requirements:
+// Load Common Recipe:
 
 require 'recipe/common.php';
 
-// Load Server Configuration:
+// Load Server Inventory:
 
 inventory('deploy.yml');
 
@@ -20,18 +31,18 @@ set('bin/composer', function () {
     return run('which composer');
 });
 
-// Define SSH Settings:
-
-set('ssh_type', 'native');
-set('ssh_multiplexing', false);
-
 // Define Default Stage:
 
 set('default_stage', 'staging');
 
-// Define Git Repository:
+// Define Project Details:
 
+set('application', '{app-name}');
 set('repository', '{repo-url}');
+
+// Allow Anonymous Statistics?
+
+set('allow_anonymous_stats', false);
 
 // Define Shared Dirs:
 
@@ -45,7 +56,7 @@ set('writable_dirs', [
     'assets'
 ]);
 
-// Define SilverStripe Helper Tasks:
+// Define Helper Tasks:
 
 task('silverstripe:build', function () {
     return run('{{bin/php}} {{release_path}}/vendor/silverstripe/framework/cli-script.php dev/build');
@@ -58,15 +69,19 @@ task('silverstripe:buildflush', function () {
 // Define Deployment Task:
 
 task('deploy', [
+    'deploy:info',
     'deploy:prepare',
+    'deploy:lock',
     'deploy:release',
     'deploy:update_code',
     'deploy:vendors',
     'deploy:shared',
     'deploy:writable',
     'silverstripe:buildflush',
+    'deploy:clear_paths',
     'deploy:symlink',
-    'cleanup',
+    'deploy:unlock',
+    'cleanup'
 ])->desc('Deploy application');
 
 // After Deployment Success Task:

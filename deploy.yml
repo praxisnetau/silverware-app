@@ -1,5 +1,5 @@
 # ======================================================================================================================
-# Application Deployment Config
+# Application Deployment Config / Server Inventory
 # ======================================================================================================================
 
 # Staging Server:
@@ -10,6 +10,7 @@ staging:
   stage: staging
   branch: {branch-staging}
   deploy_path: {path-staging}
+  multiplexing: false
   env:
     SS_ENVIRONMENT_TYPE: test
     SS_DATABASE_PREFIX: test_
@@ -23,6 +24,7 @@ production:
   stage: production
   branch: {branch-production}
   deploy_path: {path-production}
+  multiplexing: false
   env:
     SS_ENVIRONMENT_TYPE: live
     SS_DATABASE_PREFIX: live_
