@@ -1,18 +1,18 @@
 <?php
 
 /**
- * This file is part of SilverWare.
+ * This file is part of {app-title}.
  *
  * PHP version >=5.6.0
  *
  * For full copyright and license information, please view the
  * LICENSE.md file that was distributed with this source code.
  *
- * @package SilverWare\App
- * @author Colin Tucker <colin@praxis.net.au>
- * @copyright 2017 Praxis Interactive
- * @license https://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @link https://github.com/praxisnetau/silverware-app
+ * @package {app-namespace}
+ * @author {author-name} <{author-email}>
+ * @copyright {year} {author-company}
+ * @license {license-link} {license-name}
+ * @link {project-link}
  */
 
 use SilverStripe\CMS\Model\SiteTree;
@@ -23,11 +23,11 @@ use SilverStripe\CMS\Model\SiteTree;
  * As SilverStripe relies on having a global Page class available, this class is
  * intentionally defined without a namespace in order to keep SilverStripe happy.
  *
- * @package SilverWare\App
- * @author Colin Tucker <colin@praxis.net.au>
- * @copyright 2017 Praxis Interactive
- * @license https://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @link https://github.com/praxisnetau/silverware-app
+ * @package {app-namespace}
+ * @author {author-name} <{author-email}>
+ * @copyright {year} {author-company}
+ * @license {license-link} {license-name}
+ * @link {project-link}
  */
 class Page extends SiteTree
 {
