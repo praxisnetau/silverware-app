@@ -12,12 +12,14 @@ SilverWare\Model\Layout:
             StyleID: Crumbs
             HideTopLevel: false
           +SilverWare\Components\PageComponent.PageLayout:
+            StyleID: PageComponent
         +Right:
           StyleID: Sidebar
           Sidebar: true
           HideEmpty: true
           Span:
-            Medium: 3
+            Medium: 4
+            Large: 3
           +SilverWare\Components\AreaComponent.Sidebar:
   Home:
     +Section:
@@ -25,3 +27,4 @@ SilverWare\Model\Layout:
         +Column:
           StyleID: HomePageLayout
           +SilverWare\Components\PageComponent.PageLayout:
+            StyleID: PageComponent
