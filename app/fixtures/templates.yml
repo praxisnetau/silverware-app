@@ -9,7 +9,9 @@ SilverWare\Model\Template:
         NoGutters: true
         +Column:
           +SilverWare\Navigation\Components\BarNavigation.NavBar:
+            StyleID: NavBar
             BrandText: 'SilverWare'
+            Background: ''
             +SilverWare\Navigation\Items\NavigationItem.MainNavigation:
               ShowSubMenus: true
     +SilverWare\Sections\LayoutSection.Layout:
