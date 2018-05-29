@@ -97,31 +97,25 @@ class HomePage extends Page
         
         // Require Default Records:
         
-        if (!self::find()) {
+        if (!self::find() && SiteTree::config()->create_default_pages) {
             
-            // Replace Default Home Page:
+            // Obtain Default Home Page Instance:
             
-            if (SiteTree::config()->create_default_pages && !self::find()) {
+            if ($page = SiteTree::get_by_link(RootURLController::config()->default_homepage_link)) {
                 
-                // Obtain Default Home Page Instance:
+                // Replace Default Home Page Instance:
                 
-                if ($page = SiteTree::get_by_link(RootURLController::config()->default_homepage_link)) {
-                    
-                    // Replace Default Home Page Instance:
-                    
-                    $page = $page->newClassInstance(self::class);
-                    
-                    // Save and Publish Home Page Record:
-                    
-                    $page->write();
-                    $page->copyVersionToStage(Versioned::DRAFT, Versioned::LIVE);
-                    $page->flushCache();
-                    
-                    // Report Database Alteration:
-                    
-                    DB::alteration_message('Default home page record changed to HomePage class', 'changed');
-                    
-                }
+                $page = $page->newClassInstance(self::class);
+                
+                // Save and Publish Home Page Record:
+                
+                $page->write();
+                $page->copyVersionToStage(Versioned::DRAFT, Versioned::LIVE);
+                $page->flushCache();
+                
+                // Report Database Alteration:
+                
+                DB::alteration_message('Default home page record changed to HomePage class', 'changed');
                 
             }
             
