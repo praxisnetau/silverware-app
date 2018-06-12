@@ -6,5 +6,6 @@ Name: app-theme
 
 SilverStripe\View\SSViewer:
   themes:
+    - '$public'
     - 'silverware-theme'
     - '$default'

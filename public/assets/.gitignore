@@ -1,0 +1,7 @@
+### SilverStripe Assets ###
+/**/*
+!.gitignore
+!.htaccess
+!web.config
+!Uploads/
+!Uploads/silverware-logo.png

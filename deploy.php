@@ -47,13 +47,13 @@ set('allow_anonymous_stats', false);
 // Define Shared Dirs:
 
 set('shared_dirs', [
-    'assets'
+    'public/assets'
 ]);
 
 // Define Writable Dirs:
 
 set('writable_dirs', [
-    'assets'
+    'public/assets'
 ]);
 
 // Define Helper Tasks:
