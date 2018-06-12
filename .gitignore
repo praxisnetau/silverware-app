@@ -3,6 +3,7 @@
 Thumbs.db
 
 ### Folder Config ###
+.directory
 .DS_Store
 Desktop.ini
 
@@ -16,7 +17,7 @@ Desktop.ini
 /vendor
 
 ### Node.js Packages ###
-/**/node_modules
+node_modules/
 
 ### Sass Cache ###
 .sass-cache
@@ -27,21 +28,12 @@ Desktop.ini
 
 ### Environment Config ###
 .env
-_ss_environment.php
 
 ### SilverStripe Cache ###
-/silverstripe-cache
-
-### SilverStripe Assets ###
-/assets/*
-/assets/Uploads/*
-!/assets/.htaccess
-!/assets/web.config
-!/assets/Uploads/
-!/assets/Uploads/silverware-logo.png
+silverstripe-cache/
 
 ### SilverStripe Resources ###
-/resources
+resources/
 
 ### SilverStripe Themes ###
 /themes/silverware-theme

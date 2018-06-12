@@ -15,6 +15,9 @@
  * @link {project-link}
  */
 
+use SilverStripe\Security\Member;
+use SilverStripe\Security\PasswordValidator;
+
 // Define Application Constants:
 
 if (!defined('APP_DIR')) {
@@ -24,3 +27,10 @@ if (!defined('APP_DIR')) {
 if (!defined('APP_PATH')) {
     define('APP_PATH', realpath(__DIR__));
 }
+
+// Define Member Password Validator:
+
+$validator = new PasswordValidator();
+$validator->setMinLength(8);
+$validator->setHistoricCount(6);
+Member::set_password_validator($validator);
