@@ -1,5 +1,6 @@
 {
   "name": "silverware/app",
+  "type": "silverstripe-project",
   "description": "SilverWare Application.",
   "homepage": "https://github.com/praxisnetau/silverware-app",
   "keywords": [
