@@ -66,7 +66,8 @@
     },
     "expose": [
       "app/admin/client/dist",
-      "app/client/dist"
+      "app/client/dist",
+      "themes/silverware-theme/production"
     ]
   },
   "minimum-stability": "dev",
