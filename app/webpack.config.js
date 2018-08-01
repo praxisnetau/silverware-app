@@ -15,7 +15,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Define Base:
 
-const BASE = '/app';
+const BASE = '/resources/app';
 
 // Define Paths:
 
